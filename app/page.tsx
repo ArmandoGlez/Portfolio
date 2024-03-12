@@ -5,7 +5,8 @@ import { useEffect, useRef } from "react";
 import Gallery from "./components/Gallery";
 import Experience from "./components/Experience";
 import Footer from "../app/components/footer";
-import { motion, useInView, useAnimation, useIsPresent } from "framer-motion";
+import { motion, useInView, useAnimation } from "framer-motion";
+
 import { ibmPlexMono, poppins } from "./ui/fonts";
 
 // hover:bg-gray-900 hover:bg-opacity-25 transition duration-800 ease-in-out transform hover:translate-y-0.5 hover:translate-x-0.5

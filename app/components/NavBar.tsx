@@ -1,8 +1,7 @@
 "use client";
-import React, { useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { poppins } from "../ui/fonts";
+import React, { useState } from "react";
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -10,8 +9,6 @@ const Navbar = () => {
 	const handleToggleMenu = () => {
 		setIsOpen(!isOpen);
 	};
-	const router = useRouter();
-	// ${router.pathname !== '/' ? 'bg-gray-500' : ''}
 
 	return (
 		<nav className={` bg-black border-gray-500 border-b p-4 `}>
