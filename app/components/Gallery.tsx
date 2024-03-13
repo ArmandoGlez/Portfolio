@@ -5,17 +5,11 @@ import Inge from "../../public/ingeXD.png";
 import { CiLocationOn } from "react-icons/ci";
 import Tepic from "../../public/Tepic-Portada.jpg";
 import { LiaStreetViewSolid } from "react-icons/lia";
-import {
-	ibmPlexMono,
-	ibmPlexMono2,
-	ibmPlexMono3,
-	poppins,
-	varelaRound,
-} from "../ui/fonts";
+import { poppins } from "../ui/fonts";
 export default function Gallery() {
 	return (
 		<>
-			<div className="flex flex-row justify-center items-center myDiv">
+			<div className="flex flex-row justify-center items-center myDiv sm:flex-col">
 				<div className="flex flex-col justify-center items-center">
 					<h1 className={`${poppins.className} font-bold text-white text-xl`}>
 						Universidad Tecnológica de Nayarit
@@ -44,22 +38,22 @@ export default function Gallery() {
 					alt="University"
 					width={300}
 					height={200}
-					className="rounded-xl opacity-80"
+					className="rounded-xl opacity-80 sm:mt-5"
 				/>
 			</div>
 
 			<div className="mx-auto mt-8 mb-8 w-1/2 border-t border-gray-400 opacity-50"></div>
 
-			<div className="flex flex-row justify-center items-center myDiv">
+			<div className="flex flex-row justify-center items-center myDiv sm:flex-col">
 				<Image
 					src={Tepic}
 					alt="University"
 					width={300}
 					height={200}
-					className="rounded-xl opacity-80"
+					className="rounded-xl opacity-80 sm:mt-5"
 				/>
 
-				<div className="flex flex-col justify-center items-center">
+				<div className="flex flex-col justify-center items-center ">
 					<h1 className={`${poppins.className} font-bold text-white text-xl`}>
 						Tepic Nayarit México
 					</h1>
@@ -87,9 +81,11 @@ export default function Gallery() {
 
 			<div className="mx-auto mt-8 mb-8 w-1/2 border-t border-gray-400 opacity-50"></div>
 
-			<div className="flex flex-row justify-center items-center myDiv">
+			<div className="flex flex-row justify-center items-center myDiv sm:flex-col">
 				<div className="flex flex-col justify-center items-center">
-					<h1 className={`${poppins.className} font-bold text-white text-xl`}>
+					<h1
+						className={`${poppins.className} font-bold text-white text-xl sm:text-center`}
+					>
 						Ingeniería en Gestión y Desarrollo de Software
 					</h1>
 

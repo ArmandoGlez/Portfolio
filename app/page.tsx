@@ -45,14 +45,14 @@ export default function Home() {
 						Hi, I'm Armando 👋
 					</h1>
 
-					<div className="w-1/2 p-12 border border-gray-400 rounded-lg border-opacity-20 ">
+					<div className="sm:w-9/12 sw:p-1 md:w-9/12 lg:w-1/2 p-12 border border-gray-400 rounded-lg border-opacity-20">
 						<p className={`${ibmPlexMono.className} text-white antialiased`}>
 							I'm a software developer intern at the Wallavi company, I love
 							technology and learning everything about software.
 						</p>
 					</div>
 
-					<div className="flex justify-center items-center mt-16 space-x-8 px-12">
+					<div className="flex sm:flex-col justify-center items-center mt-16 space-x-8 px-12">
 						<Image
 							src={Me}
 							alt="Me"
@@ -60,7 +60,9 @@ export default function Home() {
 							height={200}
 							className="rounded-xl opacity-80"
 						/>
-						<p className={`${poppins.className} text-white antialiased`}>
+						<p
+							className={`${poppins.className} text-white sm:mt-4 antialiased`}
+						>
 							"In the world of programming, every mistake is
 							<br /> an opportunity to learn and improve"
 						</p>
@@ -87,8 +89,6 @@ export default function Home() {
 			</div>
 
 			<Experience />
-
-			<Footer />
 		</>
 	);
 }
