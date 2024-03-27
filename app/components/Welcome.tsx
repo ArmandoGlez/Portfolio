@@ -12,7 +12,7 @@ export default function Welcome() {
 		if (isInView) {
 			activateAnimation.start("visible");
 		}
-	}, [isInView]);
+	}, [isInView, activateAnimation]);
 
 	return (
 		<>

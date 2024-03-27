@@ -31,13 +31,8 @@ export default function ImageList() {
 		if (isInView) {
 			activateAnimation.start("visible");
 		}
-	}, [isInView]);
+	}, [isInView, activateAnimation]);
 
-	useEffect(() => {
-		if (isInView) {
-			activateAnimation.start("visible");
-		}
-	}, [isInView]);
 	const images = [
 		Aguacate,
 		Aguacate2,

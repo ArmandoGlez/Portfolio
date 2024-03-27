@@ -5,6 +5,7 @@ import { GoPeople } from "react-icons/go";
 import { Spinner } from "@nextui-org/react";
 import React, { useEffect, useRef, useState } from "react";
 import { useAnimation, useInView, motion } from "framer-motion";
+import Image from "next/image";
 
 interface GitHubUser {
 	name: string;
@@ -60,10 +61,12 @@ const ProfilePage: React.FC = () => {
 								{userData.name}
 							</h1>
 
-							<img
+							<Image
 								src={userData.avatar_url}
 								alt="GitHub Avatar"
 								style={{ width: 100, height: 100, borderRadius: "50%" }}
+								width={100}
+								height={100}
 							/>
 							<div className="flex justify-center items-center gap-4">
 								<p className={`${poppins.className} antialiased text-white`}>

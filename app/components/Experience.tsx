@@ -27,7 +27,7 @@ export default function Experience() {
 		if (isInView) {
 			activateAnimation.start("visible");
 		}
-	}, [isInView]);
+	}, [isInView, activateAnimation]);
 
 	return (
 		<>

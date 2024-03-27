@@ -20,7 +20,7 @@ export default function Buttons() {
 						/>
 						<div className="flex flex-col gap-4">
 							<p className="text-justify">
-								Vercel builds a frontend-as-a-service product—they make it easy
+								Vercel builds a frontend as a service product they make it easy
 								for engineers to deploy and run the user facing parts of their
 								applications.
 							</p>
@@ -48,9 +48,9 @@ export default function Buttons() {
 						/>
 						<div className="flex flex-col gap-4">
 							<p className="text-justify">
-								Used by some of the world's largest companies, Next.js enables
-								you to create high-quality web applications with the power of
-								React components.
+								Used by some of the world&apos;s largest companies, Next.js
+								enables you to create high-quality web applications with the
+								power of React components.
 							</p>
 							<a
 								href="https://nextjs.org/"
