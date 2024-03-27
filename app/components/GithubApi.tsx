@@ -26,7 +26,7 @@ const ProfilePage: React.FC = () => {
 		if (isInView) {
 			activateAnimation.start("visible");
 		}
-	}, [isInView]);
+	}, [isInView, activateAnimation]);
 
 	useEffect(() => {
 		const fetchGitHubData = async () => {

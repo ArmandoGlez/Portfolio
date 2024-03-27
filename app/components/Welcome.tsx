@@ -32,13 +32,13 @@ export default function Welcome() {
 						<h1
 							className={`${poppins.className} antialiased text-white text-3xl mb-6`}
 						>
-							Hi, I'm Armando 👋
+							Hi, I&apos;m Armando 👋
 						</h1>
 
 						<div className="sm:w-9/12 sw:p-1 md:w-9/12 lg:w-1/2 p-12 border border-gray-400 rounded-lg border-opacity-20">
 							<p className={`${poppins.className} text-white antialiased`}>
-								I'm a software developer intern at the Wallavi company, I love
-								technology and learning everything about software.
+								I&apos;m a software developer intern at the Wallavi company, I
+								love technology and learning everything about software.
 							</p>
 						</div>
 
@@ -54,8 +54,8 @@ export default function Welcome() {
 							<p
 								className={`${poppins.className} text-white sm:mt-4 antialiased`}
 							>
-								"In the world of programming, every mistake is
-								<br /> an opportunity to learn and improve"
+								&quot;In the world of programming, every mistake is
+								<br /> an opportunity to learn and improve&quot;
 							</p>
 						</div>
 					</div>
