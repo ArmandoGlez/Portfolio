@@ -16,20 +16,22 @@ const config: Config = {
 					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
 			},
 			screens: {
-				"2xl": { min: "1535px" },
-				// => @media (max-width: 1535px) { ... }
-
 				xl: { min: "1279px" },
-				// => @media (max-width: 1279px) { ... }
 
 				lg: { min: "1023px" },
-				// => @media (max-width: 1023px) { ... }
 
-				md: { min: "768px" },
-				// => @media (max-width: 767px) { ... }
+				md: { min: "767px" },
 
 				sm: { min: "300px", max: "766px" },
-				// => @media (max-width: 639px) { ... }
+			},
+			keyframes: {
+				"slide-left": {
+					"0%": { transform: "translateX(0)" },
+					"100%": { transform: "translateX(-100%)" },
+				},
+			},
+			animation: {
+				"slide-left": "slide-left 20s infinite",
 			},
 		},
 	},

@@ -31,8 +31,8 @@ export default function Experience() {
 
 	return (
 		<>
-			<div ref={ref} className="text-center">
-				<div className="grid grid-cols-3 gap-1 justify-center items-center">
+			<div ref={ref} className="text-center sm:w-5/6 mx-auto w-3/5">
+				<div className="grid sm:grid-cols-2 grid-cols-3 gap-1 justify-center items-center">
 					{myImages.map((images, i) => (
 						<motion.div
 							variants={{
@@ -42,10 +42,10 @@ export default function Experience() {
 							initial="hidden"
 							animate={activateAnimation}
 							transition={{ duration: 0.5, delay: 0.55 }}
+							key={i}
 						>
-							<div className="flex justify-center items-center" key={i}>
+							<div className="flex justify-center items-center">
 								<Image
-									key={i}
 									src={images.src}
 									alt={images.alt}
 									width={300}

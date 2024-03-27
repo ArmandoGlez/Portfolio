@@ -5,10 +5,10 @@ import { poppins2, poppins } from "../ui/fonts";
 
 export default function Footer() {
 	return (
-		<footer className="bg-black text-white py-8">
-			<div className="container mx-auto flex justify-center">
+		<footer className="bg-black text-white md:ml-4 md:mr-4 py-8">
+			<div className="container mx-auto flex flex-col md:flex-row justify-center">
 				{/* Sección de contacto */}
-				<div className="flex-1 mr-8 border-gray-600 border-r pr-8">
+				<div className="flex-1 mb-8 md:mr-8 md:border-gray-600 md:border-r md:pr-8">
 					<h2
 						className={`${poppins2.className} antialiased text-lg font-semibold mb-4`}
 					>
@@ -27,16 +27,40 @@ export default function Footer() {
 					</ul>
 				</div>
 				{/* Sección de redes sociales */}
-				<div className="flex-1  mr-8 border-gray-600 border-r pr-8">
+				<div className="flex-1 mb-8 md:mr-8 md:border-gray-600 md:border-r md:pr-8">
 					<h2
 						className={`${poppins2.className} antialiased text-lg font-semibold mb-4`}
 					>
 						Media
 					</h2>
 					<ul>
-						<FaFacebook className="text-2xl" />
-						<FaInstagramSquare className="text-2xl" />
-						<FaLinkedin className="text-2xl" />
+						<a
+							href="https://www.facebook.com/profile.php?id=100068826635977"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<li className="mb-2">
+								<FaFacebook className="text-2xl" />
+							</li>
+						</a>
+						<a
+							href="https://www.instagram.com/mandoglezz?igsh=Y28zYjZ5OXVlZm41&utm_source=qr"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<li className="mb-2">
+								<FaInstagramSquare className="text-2xl" />
+							</li>
+						</a>
+						<a
+							href="https://www.linkedin.com/in/armando-gonz%C3%A1lez-398380221/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<li className="mb-2">
+								<FaLinkedin className="text-2xl" />
+							</li>
+						</a>
 					</ul>
 				</div>
 				{/* Sección de correo */}
